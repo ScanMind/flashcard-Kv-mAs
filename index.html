@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E8EDF0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10181D" media="(prefers-color-scheme: dark)">
+<title>Técnica radiográfica · kV y mAs</title>
+<meta name="description" content="Flashcards para memorizar kV y mAs por proyección radiográfica, de cráneo a pies.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="kV y mAs">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div class="top"><h1>Técnica radiográfica</h1><div class="tb"><button class="chip" id="oR">Rangos</button><button class="chip" id="oP">Progreso</button></div></div>
+  <div class="chips" id="chips" role="group" aria-label="Región anatómica"></div>
+  <div class="barrow"><div class="bar"><i id="fill"></i></div><span class="stat" id="s1"></span></div>
+  <div id="stage"></div>
+  <div class="foot"><div class="seg" id="modes" role="group" aria-label="Modo"><button data-m="nombre">Ver nombre</button><button data-m="imagen">Ver imagen</button><button data-m="examen">Examen</button></div></div>
+</div>
+<div id="sheet" hidden><div class="sh"><div class="tabs"><button class="chip" data-t="r">Rangos</button><button class="chip" data-t="p">Progreso</button></div><button class="chip" id="cl">Cerrar</button></div><div id="sb"></div></div>
+<script src="data.js"></script>
+<script src="images.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
